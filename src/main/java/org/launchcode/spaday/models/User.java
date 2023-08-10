@@ -30,6 +30,7 @@ public class User {
         this.password = password;
     }
 
+
     private void checkPassword(){
         if((!isNull(this.password) && !isNull(this.verifyPassword)) && !this.password.equals(this.verifyPassword)) {
             this.verifyPassword = null;
